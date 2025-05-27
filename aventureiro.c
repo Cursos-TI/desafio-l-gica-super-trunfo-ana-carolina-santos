@@ -25,7 +25,7 @@ int main() {
     double densidade1 = (double)carta1.populacao / carta1.area;
     double densidade2 = (double)carta2.populacao / carta2.area;
 
-    int escolha;
+    int escolha = 1; // <<< escolha fixa: 1 = Populacao
 
     printf(">>> CARTA 1 <<<\n");
     mostrarCidade(carta1);
@@ -33,15 +33,8 @@ int main() {
     printf(">>> CARTA 2 <<<\n");
     mostrarCidade(carta2);
 
-    printf("Escolha o atributo para comparar:\n");
-    printf("1 - Populacao\n");
-    printf("2 - PIB\n");
-    printf("3 - Pontos Turisticos\n");
-    printf("4 - Densidade Demografica\n");
-    printf("Digite sua opcao: ");
-    scanf("%d", &escolha);
-
-    printf("\n>>> RESULTADO <<<\n");
+    printf("Escolha fixa: %d\n\n", escolha);
+    printf(">>> RESULTADO <<<\n");
 
     switch (escolha) {
         case 1:
